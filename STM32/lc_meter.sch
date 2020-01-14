@@ -10347,9 +10347,9 @@ naming: grid - package width</description>
 <instance part="P+9" gate="VCC" x="50.8" y="124.46" smashed="yes">
 <attribute name="VALUE" x="48.26" y="121.92" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="INDUCTANCE" gate="G$1" x="-129.54" y="78.74" smashed="yes" rot="R180">
-<attribute name="NAME" x="-130.81" y="83.185" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-123.19" y="83.82" size="1.778" layer="96" rot="R180"/>
+<instance part="INDUCTANCE" gate="G$1" x="-129.54" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="-130.81" y="47.625" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-123.19" y="48.26" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -10393,6 +10393,8 @@ naming: grid - package width</description>
 <wire x1="-58.42" y1="45.72" x2="-58.42" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="40.64" x2="-68.58" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-68.58" y="40.64"/>
+<pinref part="INDUCTANCE" gate="G$1" pin="1"/>
+<wire x1="-127" y1="40.64" x2="-111.76" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="V-"/>
@@ -10498,8 +10500,6 @@ naming: grid - package width</description>
 <wire x1="-111.76" y1="78.74" x2="-99.06" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="78.74" x2="-83.82" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="78.74" x2="-78.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-127" y1="78.74" x2="-111.76" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-111.76" y="78.74"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="C3-CAL" gate="G$1" pin="1"/>
 <wire x1="-99.06" y1="68.58" x2="-99.06" y2="78.74" width="0.1524" layer="91"/>
@@ -10507,20 +10507,6 @@ naming: grid - package width</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-83.82" y1="68.58" x2="-83.82" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-83.82" y="78.74"/>
-<pinref part="INDUCTANCE" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="L$1" pin="1"/>
-<pinref part="K1" gate="2" pin="S"/>
-<wire x1="-111.76" y1="50.8" x2="-111.76" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="53.34" x2="-111.76" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="53.34" x2="-119.38" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="53.34" x2="-119.38" y2="76.2" width="0.1524" layer="91"/>
-<junction x="-111.76" y="53.34"/>
-<wire x1="-119.38" y1="76.2" x2="-127" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="INDUCTANCE" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -10854,6 +10840,19 @@ naming: grid - package width</description>
 <pinref part="C3-CAL" gate="G$1" pin="2"/>
 <pinref part="K2" gate="2" pin="S"/>
 <wire x1="-99.06" y1="60.96" x2="-99.06" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U$1" gate="L$1" pin="1"/>
+<pinref part="K1" gate="2" pin="S"/>
+<wire x1="-111.76" y1="50.8" x2="-111.76" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="INDUCTANCE" gate="G$1" pin="2"/>
+<wire x1="-111.76" y1="53.34" x2="-111.76" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-127" y1="43.18" x2="-119.38" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="43.18" x2="-119.38" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="53.34" x2="-111.76" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-111.76" y="53.34"/>
 </segment>
 </net>
 </nets>
